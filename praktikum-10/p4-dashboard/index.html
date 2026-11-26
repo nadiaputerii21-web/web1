@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard SIAKAD Mini</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container-fluid">
+
+            <a class="navbar-brand fw-bold" href="#">SIAKAD Mini</a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarAdmin"
+                    aria-controls="navbarAdmin"
+                    aria-expanded="false"
+                    aria-label="Buka atau tutup navigasi">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarAdmin">
+                <div class="ms-auto d-flex flex-column flex-lg-row align-items-lg-center gap-3 mt-3 mt-lg-0">
+
+                    <button class="btn btn-outline-light position-relative"
+                            type="button"
+                            aria-label="Notifikasi">
+                        🔔
+                        <span class="badge bg-danger position-absolute top-0 start-100 translate-middle">
+                            3
+                            <span class="visually-hidden">notifikasi belum dibaca</span>
+                        </span>
+                    </button>
+
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle"
+                                type="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            <span class="avatar">A</span>
+                            Admin Prodi
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Profil</a></li>
+                            <li><a class="dropdown-item" href="#">Pengaturan</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <aside class="col-12 col-md-3 col-lg-2 sidebar">
+                <ul class="nav flex-column menu">
+                    <li class="nav-item">
+                        <a class="nav-link aktif" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Data Mahasiswa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Mata Kuliah</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nilai</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Laporan</a>
+                    </li>
+                </ul>
+
+                <ul class="nav flex-column menu-pengaturan">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pengaturan</a>
+                    </li>
+                </ul>
+            </aside>
+
+            <main class="col-12 col-md-9 col-lg-10 konten">
+
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
+                    <div>
+                        <h1 class="display-6 fw-bold">Dashboard</h1>
+                        <p class="lead text-secondary mb-0">Semester Ganjil 2026/2027</p>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button class="btn btn-outline-primary" type="button">Ekspor</button>
+                        <button class="btn btn-primary" type="button">Tambah Mahasiswa</button>
+                    </div>
+                </div>
+
+                <section class="row g-3 mb-4">
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="kartu h-100">
+                            <h2 class="h6 text-secondary">Mahasiswa Aktif</h2>
+                            <p class="angka mb-0">1.248</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="kartu h-100">
+                            <h2 class="h6 text-secondary">Dosen</h2>
+                            <p class="angka mb-0">62</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="kartu h-100">
+                            <h2 class="h6 text-secondary">Mata Kuliah</h2>
+                            <p class="angka mb-0">94</p>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-3">
+                        <div class="kartu h-100">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h2 class="h6 text-secondary">Kelas Hari Ini</h2>
+                                <span class="badge text-bg-success">Baru</span>
+                            </div>
+                            <p class="angka mb-0">18</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Pengumuman -->
+                <section class="panel mb-4">
+                    <h2 class="h4">Pengumuman</h2>
+                    <p class="mb-0">
+                        Selamat datang di Dashboard SIAKAD Mini.
+                        Silakan periksa informasi akademik secara berkala.
+                    </p>
+                </section>
+
+                <section class="panel mb-4">
+                    <h2 class="h4 mb-3">Galeri Kegiatan</h2>
+
+                    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 g-2">
+                        <div class="col">
+                            <img src="img/foto1.jpg" class="img-fluid rounded" alt="Foto kegiatan 1">
+                        </div>
+                        <div class="col">
+                            <img src="img/foto2.jpg" class="img-fluid rounded" alt="Foto kegiatan 2">
+                        </div>
+                        <div class="col">
+                            <img src="img/foto3.jpg" class="img-fluid rounded" alt="Foto kegiatan 3">
+                        </div>
+                        <div class="col">
+                            <img src="img/foto4.jpg" class="img-fluid rounded" alt="Foto kegiatan 4">
+                        </div>
+                        <div class="col">
+                            <img src="img/foto5.jpg" class="img-fluid rounded" alt="Foto kegiatan 5">
+                        </div>
+                        <div class="col">
+                            <img src="img/foto6.jpg" class="img-fluid rounded" alt="Foto kegiatan 6">
+                        </div>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer bg-white text-dark border-top py-4">
+        <div class="container-fluid">
+            <div class="row g-3">
+
+                <div class="col-12 col-lg-4">
+                    <h2 class="h5">Tentang</h2>
+                    <p class="small mb-0">
+                        SIAKAD Mini merupakan sistem informasi akademik
+                        untuk membantu pengelolaan data perkuliahan.
+                    </p>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <h2 class="h5">Tautan</h2>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="#" class="link-dark">Dashboard</a></li>
+                        <li><a href="#" class="link-dark">Data Mahasiswa</a></li>
+                        <li><a href="#" class="link-dark">Laporan</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <h2 class="h5">Kontak</h2>
+                    <p class="small mb-0">
+                        Email: admin@siakadmini.ac.id
+                    </p>
+                </div>
+
+            </div>
+
+            <hr>
+            <p class="small text-center mb-0">
+                &copy; 2026 SIAKAD Mini. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
